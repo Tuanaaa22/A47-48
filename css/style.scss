@@ -1,0 +1,54 @@
+.container
+{
+    background-color: #eee;
+    width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-rows: repeat(2,150px);
+    grid-template-columns: repeat(3,3fr);
+    // grid-row-gap:30px;
+    // grid-column-gap:30px ;
+    grid-gap:30px;
+    grid-template-areas: "blue green orange"
+    "pink red black";
+}
+.item{
+    padding: 20px ;
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+}
+.black{
+    background-color: black;
+    // grid-row-end: 3;
+    // grid-row-start: 2;
+    // grid-column-start: 3;
+    // grid-column-end: 4;
+    // grid-row: 2/3;
+    // grid-column: 3/4;
+    grid-area: black;
+}
+.pink{
+    background-color: pink;
+    // grid-row-start: 2;
+    grid-area:pink ;
+}
+.green{
+    background-color: green;
+    // grid-column: 2; 
+grid-row: 1/2;
+grid-column: 2/-1;
+
+}
+.orange{
+    background-color: orange;
+    // grid-column: 3;
+
+}
+.red{
+    background-color: RED;
+}
+.blue{
+    background-color: blue;
+    grid-row: 1;
+}
